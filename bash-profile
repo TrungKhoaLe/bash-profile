@@ -1,0 +1,7 @@
+# customize the terminal
+PS1="\`if [ \$? = 0 ]; then echo 🤣 ; else echo 🤬 ; fi\` \[$(tput setaf 046)\]\u"; #blue user
+PS1+="\[$(tput setaf 160)\]@\[$(tput setaf 228)\]\h ";
+PS1+="\[$(tput setaf 160)\]\W 🚀 ";
+PS1+="\[$(tput sgr0)\]";
+
+export PS1;
